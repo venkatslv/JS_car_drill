@@ -1,5 +1,5 @@
 let inventory = require ('../data')
-let lastcar = require ('../problem2.js')
+let tofindlastcar = require ('../problem2.js')
 
-let lastcardata = lastcar(inventory)
+let lastcardata = tofindlastcar(inventory)
 console.log(lastcardata)
