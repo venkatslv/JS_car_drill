@@ -1,9 +1,10 @@
 let inventory = require ('./data')
 
-function lastcar(data){
-    if(Array.isArray(data)){
-    return data[data.length-1]
-}
+function tofindlastcar(data) {
+    if (Array.isArray(data) && data.length > 0) {
+        return data.reduce((acc, curr) => curr);
+    } 
 }
 
-module.exports = lastcar;
+
+module.exports = tofindlastcar;
