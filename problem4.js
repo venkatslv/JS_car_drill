@@ -1,12 +1,11 @@
-function carYears(arr){
-    if(Array.isArray(arr)){
-    let car_years=[]
-    for(let car of arr){
-        car_years.push(car.car_year);
+const inventory = require ('./data')
 
-    }
-    return car_years
+function caryears(data) {
+    if (Array.isArray(data) && data.length > 0) {
+        const caryears = data.map(car => car.car_year);
+        return caryears;
+    } 
 }
-};
 
-module.exports=carYears;
+
+module.exports = caryears;
