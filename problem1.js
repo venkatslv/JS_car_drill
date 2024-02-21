@@ -1,15 +1,9 @@
 let inventory = require ('./data')
 
-function cardata(data) {
-    if(Array.isArray(data)){
-    for (let car of data) {
-        if (car.id === 33) {
-            return car;
-        }
+function tofindoutcar(data) {
+    if (Array.isArray(data)) {
+        return data.filter(car => car.id === 33);
     }
 }
-}
-// let result = cardata(inventory);
-// console.log(result);
 
-module.exports = cardata;
+module.exports = tofindoutcar;
