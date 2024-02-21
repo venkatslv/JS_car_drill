@@ -1,14 +1,9 @@
 const inventory= require ('./data')
 
 function BMW_AUDI(data) {
-    if(Array.isArray(data)){
-    let twoCars = [];
-    for (let index = 0; index < data.length; index++) {
-        if (data[index].car_make === "BMW" || data[index].car_make === "Audi") {
-            twoCars.push(data[index]);
-        }
+    if (Array.isArray(data)) {
+        return data.filter(car => car.car_make === "BMW" || car.car_make === "Audi");
     }
-    return twoCars;
 }
-}
+
 module.exports = BMW_AUDI;
