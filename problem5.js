@@ -1,16 +1,11 @@
 const inventory = require ('./data')
 
 function tofindouttheunder2000year(data) {
-    if(Array.isArray(data)){
-    let underYear = [];
-    for (let index = 0; index < data.length; index++) {
-        if (data[index].car_year <= 2000) {
-            underYear.push(data[index].car_year);
-        }
+    if (Array.isArray(data)) {
+        return data.filter(car => car.car_year <= 2000).map(car => car.car_year);
     }
-    return underYear;
 }
-}
+
 
 module.exports = tofindouttheunder2000year;
 
