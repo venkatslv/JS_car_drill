@@ -1,5 +1,5 @@
-let inventory = require ('../data')
-let caryear= require ('../problem4')
+const inventory = require ('../data')
+const caryear= require ('../problem4')
 
 let numberOfYears = caryear(inventory);
 console.log(numberOfYears);
